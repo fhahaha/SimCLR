@@ -1,5 +1,5 @@
-# simCLR-constractive-loss
-constractive loss for simCLR
+# simCLR-contrastive-loss
+contrastive loss for simCLR
 ```
 out:[a1,a2,a3] \
 out_aug:[b1,b2,b3] \
