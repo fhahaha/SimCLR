@@ -47,15 +47,11 @@ concat[logits_ab,logits_aa]:
 a1*b1,a1*b2,a1*b3,-INF,a1*a2,a1*a3 \
 a2*b1,a2*b2,a2*b3,a2*a1,-INF,a2*a3 \
 a3*b1,a3*b2,a3*b3,a3*a1,a3*a2,-INF \
-only a1*b1, a2*b2, a3*b3  is positives
+only a1*b1, a2*b2, a3*b3  are positives
 
 concat [logits_ab,logits_bb]:
 b1*a1,b1*a2,b1*a3,-INF,b1*b2,b1*b3 \
 b2*a1,b2*a2,b2*a3,b2*b1,-INF,b2*b3 \
 b3*a1,b3*a2,b3*a3,b3*b1,b3*b2,-INF \
-only b1*a1, b2*a2, b3*a3  is positives, so calculate the softmax_cross_entropy with labels
-labels [batch_size,2*batch_size] batch_size=3
-1 0 0 0 0 0 \
-0 1 0 0 0 0 \
-0 0 1 0 0 0 \
+only b1*a1, b2*a2, b3*a3  are positives, so calculate the softmax_cross_entropy with labels
 ```
