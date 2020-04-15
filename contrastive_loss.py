@@ -1,6 +1,6 @@
 import numpy as np
 
-def constractive_loss(out,out_aug,batch_size=128,hidden_norm=False,temperature=1.0):
+def contrastive_loss(out,out_aug,batch_size=128,hidden_norm=False,temperature=1.0):
 
     if hidden_norm:
         out=tf.nn.l2_normalize(out,-1)
