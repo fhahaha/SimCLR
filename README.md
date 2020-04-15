@@ -1,6 +1,6 @@
 # simCLR-constractive-loss
 constractive loss for simCLR
-'''
+```
 out:[a1,a2,a3] \
 out_aug:[b1,b2,b3] \
 
@@ -58,4 +58,4 @@ labels [batch_size,2*batch_size] batch_size=3
 1 0 0 0 0 0 \
 0 1 0 0 0 0 \
 0 0 1 0 0 0 \
-'''
+```
